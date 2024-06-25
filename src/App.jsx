@@ -1,4 +1,5 @@
 import { Route, Switch } from "wouter";
+import Home from "./pages/Home";
 import Portfolio from "./pages/Portfolio";
 import ProjectGallery from "./pages/ProjectGallery";
 import LinkTree from "./pages/Linktree";
@@ -29,7 +30,8 @@ const App = () => {
         </button>
       </div>
       <Switch>
-        <Route path="/" component={Portfolio} />
+        <Route path="/" component={Home} />
+        <Route path="/portfolio" component={Portfolio} />
         <Route path="/projects" component={ProjectGallery} />
         <Route path="/linktree" component={LinkTree} />
 
